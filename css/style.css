@@ -1,0 +1,53 @@
+:root {
+  --vertical-arrow: 20px;
+  --radious: 50px;
+}
+
+.carousel-container {
+  position: relative;
+  margin-top: 1rem;
+}
+.carousel-image {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.carousel-image > * {
+  width: 80vw;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-navigation > * {
+
+  background-color: rgb(216, 216, 216);
+  width: var(--radious);
+  height: var(--radious);
+  border-radius: 50%;
+  position: absolute;
+  border: none;
+}
+.carousel-navigation > *:active {
+    background-color: rgb(150, 150, 150);
+}
+.up-arrow,
+.down-arrow {
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  text-align: center;
+  line-height: var(--radious);
+  vertical-align: middle;
+}
+
+.up-arrow {
+  top: var(--vertical-arrow);
+}
+
+.down-arrow {
+  bottom: var(--vertical-arrow);
+}
