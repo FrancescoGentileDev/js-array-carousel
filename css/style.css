@@ -47,6 +47,8 @@
 
 .carousel-preview {
   position: relative;
+  overflow-y: auto;
+  height: 100%;
 }
 .carousel-preview img {
   height: 100px;
